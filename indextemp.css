@@ -1,0 +1,24 @@
+ input {
+    display: inline-block;
+    width: 10em;
+    position: relative;
+    padding-top: 1.0em;
+    border: oldlace;
+  }
+  
+  label {
+    top: -3em;
+    display: inline-block;
+    width: 10em;
+    margin-right: 1.0em;
+    padding-top: 1.5em;
+  }
+  body{
+    text-align: center;
+    padding:2.5%;
+}
+
+
+input:hover{
+    border: rgb(255, 0, 0);
+}

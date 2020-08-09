@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    padding:2.5%;
+}
+
+.time{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    
+}
+.time input{
+    display: inline-block;
+    padding: 1em;
+    color:rgb(0, 0, 0);
+    border: none;
+    width: 10em;
+    height: .0000000000000000001em;
+    padding-top: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.time input:hover {
+    border: 1px solid black ;
+    
+}
+
+.timelabel {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+}
+.timelabel label{
+    width: 10em;
+    margin-right: 1.0em;
+    padding-top: 1.5em;
+}
+.time p{
+    display: inline;
+    font-weight: bolder;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+
+
+/*# sourceMappingURL=/countdowntimer.e31bb0bc.css.map */
