@@ -77,10 +77,12 @@ class App extends Component{
         const stop = this.state.stopon?(
             <div>
                 <button onClick={this.stopTimer}>Stop</button>
+                <br></br>
             </div>):null
         const start = this.state.starton?(
             <div>
                 <button onClick={this.changeTimer}>Start</button>
+                <br></br>
             </div>
         ):null;
         const reset = (
@@ -94,10 +96,10 @@ class App extends Component{
                     <h3>Countdown Timer</h3>
                 </div>
                 <div className="timelabel">
-                   <label htmlFor="hour">Hour</label>
+                   <label htmlFor="hour">h</label>
                     
-                    <label htmlFor="minute" className="labelmin">Minute</label>
-                    <label htmlFor="second">Second</label>
+                    <label htmlFor="minute" className="labelmin">m</label>
+                    <label htmlFor="second">s</label>
                 </div>
                 <div className="time">
                     
@@ -108,9 +110,11 @@ class App extends Component{
                     <input type="number" onChange={e=>this.handelChange(e,'secs')} min="0" max="60" value={this.state.s} id="second" />
                 </div>
                 <br></br>
-                <div className="button">
+                
                     {start}
                     {stop}
+                    <br></br>
+                <div className="button">
                     {reset}          
                 </div>
                 

@@ -13,18 +13,32 @@ body{
 .time input{
     display: inline-block;
     padding: 1em;
-    color:rgb(0, 0, 0);
+    color:blue;
     border: none;
-    width: 10em;
+    background-color: blue;
+    width: 5em;
     height: .0000000000000000001em;
     padding-top: 2em;
     text-align: center;
     position: relative;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .time input:hover {
     border: 1px solid black ;
     
+}
+.time input:valid {
+    background: white;
 }
 
 .timelabel {
@@ -34,8 +48,10 @@ body{
     justify-content: center;
 }
 .timelabel label{
-    width: 10em;
-    margin-right: 1.0em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
     padding-top: 1.5em;
 }
 .time p{
@@ -46,7 +62,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    padding-top: 5px;
 }
 
 
